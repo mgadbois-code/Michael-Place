@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+.background {
+    /* position: absolute; */
+    min-height: 500vh;
+    background: linear-gradient(to bottom, rgb(71, 125, 187), rgb(96, 137, 184),rgb(219, 194, 82),rgb(148, 19, 19),rgb(9, 2, 48),rgb(4, 0, 26));
+    display: flex;
+    flex-direction: column;
+    
+    /* position: relative; */
+}
+
+
+#stars--background{
+    /* top: 400vh; */
+    min-height: 100vh;
+    display: block;
+    position: relative;
+    top: 400vh;
+   
+    background: url(images/stars.png);
+    /* justify-self:  flex-end; */
+}
+
+.container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    /* align-items: flex-start; */
+    overflow: hidden;
+}
+
+#sun {
+    min-width: 10vw;
+    min-height: 10vw;
+    background-color: white;
+    /* position: relative; */
+    z-index: 2;
+    border-radius: 50%;
+}
+
+#sun--ray {
+    padding: 150px;
+    border-radius: 50%;
+    background: radial-gradient(yellow, rgba(255, 255, 0, 0), transparent);
+    box-sizing:border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* mix-blend-mode:luminosity */
+}
+#sun--container { 
+    padding: 150px;;
+    border-radius: 50%;
+    max-width: 20vw;
+    max-height: 20vw;
+    /* border: solid black; */
+    box-sizing:content-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mountains {
+    z-index: 100;
+    width: 100%;
+}
