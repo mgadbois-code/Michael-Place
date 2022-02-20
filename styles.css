@@ -118,18 +118,22 @@
 
 @-webkit-keyframes changeColor {
     0%   { -webkit-filter: hue-rotate(0deg); }
+    25%  { -webkit-filter: hue-rotate(10deg)}
     100% { -webkit-filter: hue-rotate(360deg); }
 }
 @-moz-keyframes changeColor {
     0%   { -moz-filter: hue-rotate(0deg); }
+    25%  { -moz-filter: hue-rotate(10deg)}
     100% { -moz-filter: hue-rotate(360deg); }
 }
 @-o-keyframes changeColor {
     0%   { -o-filter: hue-rotate(0deg); }
+    25%  { -o-filter: hue-rotate(10deg)}
     100% { -o-filter: hue-rotate(360deg); }
 }
 @keyframes changeColor {
     0%   { filter: hue-rotate(0deg); }
+    25%  { filter: hue-rotate(10deg)}
     100% { filter: hue-rotate(360deg); }
 }
 .container {
@@ -168,8 +172,8 @@
 #sun--container { 
     padding: 150px;;
     border-radius: 50%;
-    max-width: 20vw;
-    max-height: 20vw;
+    max-width: 15vh;
+    max-height: 15vh;
     /* border: solid black; */
     box-sizing:content-box;
     position: relative;
