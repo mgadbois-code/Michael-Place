@@ -11,6 +11,23 @@
     --opacity: 0;
 }
 
+/* navbar styles */
+.navbar {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.navbar--menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 500px;
+    list-style: none;
+}
+
+.navbar--link {
+    text-decoration: none;
+}
+/* Background styles */
 .background {
     /* position: absolute; */
     min-height: 500vh;
@@ -79,6 +96,7 @@
     overflow: hidden;
 }
 
+/* Sun Styles */
 #sun {
     min-width: 10vw;
     min-height: 10vw;
@@ -112,6 +130,7 @@
     align-items: center;
 }
 
+/* Mountain Styles */
 #mountains {
     z-index: 100;
     width: 100%;
@@ -123,18 +142,19 @@
     animation-delay: calc(var(--scroll) * -4s);
 }
 @-webkit-keyframes changeBrightness {
-    0%   { -webkit-filter: brightness(1); }
-    100% { -webkit-filter: brightness(0); }
+    0%   { -webkit-filter:hue-rotate(0deg) brightness(1); }
+    100% { -webkit-filter:hue-rotate(360deg) brightness(0); }
 }
 @-moz-keyframes changeBrightness {
-    0%   { -moz-filter: brightness(1); }
-    100% { -moz-filter: brightness(0); }
+    0%   { -moz-filter:hue-rotate(0deg) brightness(1); }
+    100% { -moz-filter:hue-rotate(360deg) brightness(0); }
 }
 @-o-keyframes changeBrightness {
-    0%   { -o-filter: brightness(1); }
-    100% { -o-filter: brightness(0); }
+    0%   { -o-filter:hue-rotate(0deg) brightness(1); }
+    100% { -o-filter:hue-rotate(360deg) brightness(0); }
 }
 @keyframes changeBrightness {
-    0%   { filter: brightness(1); }
-    100% { filter: brightness(0); }
+    0%   { filter:hue-rotate(0deg)brightness(1); }
+    100% { filter:hue-rotate(360deg) brightness(0); }
 }
+
