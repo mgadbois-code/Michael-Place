@@ -9,7 +9,7 @@ let pageHeight= window.innerHeight * 4;
 
 window.addEventListener('scroll', () => {
     let value = this.window.scrollY;
-    if (value > window.innerHeight * 4) {
+    if (value > window.innerHeight * 3) {
         return
     }
     document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
@@ -21,7 +21,7 @@ window.addEventListener('scroll', () => {
         console.log("value " + value)
         sunRay.style.padding = 75 - ((value/pageHeight) * 75) + '%'
         sunContainer.style.top = value * 0.33 + 'px';
-        opacity =  (value / (window.innerHeight * 4)) * (value / (window.innerHeight * 4)) * (value / (window.innerHeight * 4)) * (value / (window.innerHeight * 4))
+        opacity =  (value / (window.innerHeight * 3)) ** 6
         // stars.style.opacity = opacity
         document.documentElement.style.setProperty("--opacity",opacity)
     // if(value > window.innerHeight * 3){

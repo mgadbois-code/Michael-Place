@@ -15,44 +15,91 @@
 .navbar {
     display: flex;
     flex-direction: row-reverse;
+    cursor: pointer;
 }
 
 .navbar--menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 500px;
+    /* border: solid black; */
+    position: fixed;
+    display: flex;
+    justify-content:  space-between;
+    margin-top: 20px;
+    width: auto;
     list-style: none;
 }
 
 .navbar--link {
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
     text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    border: solid 2px white;
+    border-radius: 20px;
+    margin: 5px;
+
 }
+
+.navbar--link:hover {
+    background-color: rgba(255, 255, 255, 0.501);
+    color: black;
+}
+
+.content {
+    /* border: solid black; */
+    pointer-events: none;
+    position: absolute;
+    display: grid;
+    grid-template-rows: 100vh 100vh 100vh 100vh;
+}
+
+/* Page Styles */
+
+.page {
+    /* min-height: 125vh; */
+    display: flex;
+    /* position: relative; */
+}
+
+.page h1 {
+    /* margin-top: 8vh; */
+    color: white;
+    padding-left: 20px;
+
+}
+
 /* Background styles */
 .background {
     /* position: absolute; */
-    min-height: 500vh;
-    background: linear-gradient(to bottom, rgb(71, 125, 187), rgb(96, 137, 184),rgb(219, 194, 82),rgb(148, 19, 19),rgb(9, 2, 48),rgb(4, 0, 26));
+    height: 400vh;
+    background: linear-gradient(to bottom, rgb(71, 125, 187), rgb(96, 137, 184),rgb(219, 194, 82),rgb(148, 19, 19) 70%,rgb(9, 2, 48) 76%,rgb(4, 0, 26));
     display: flex;
     flex-direction: column;
     
     /* position: relative; */
 }
 
+#scene--container {
+    pointer-events: none;
+}
+
 
 #stars--background{
     /* top: 400vh; */
+    pointer-events: none;
     min-height: 200vh;
     display: block;
     position: relative;
     align-items: end;
-    top: 300vh;
+    top: 200vh;
     opacity: var(--opacity);
     background: url(images/stars.png);
     /* justify-self:  flex-end; */
 }
 
 #aurora--container {
-    position: absolute;
+    position: fixed;
     align-self: flex-start;
     opacity: var(--opacity);
 }
@@ -98,8 +145,8 @@
 
 /* Sun Styles */
 #sun {
-    min-width: 10vw;
-    min-height: 10vw;
+    min-width: 15vh;
+    min-height: 15vh;
     background-color: white;
     /* position: relative; */
     z-index: 2;
@@ -117,6 +164,7 @@
     align-items: center;
     /* mix-blend-mode:luminosity */
 }
+
 #sun--container { 
     padding: 150px;;
     border-radius: 50%;
@@ -133,7 +181,8 @@
 /* Mountain Styles */
 #mountains {
     z-index: 100;
-    width: 100%;
+    min-height: 50vh;
+    min-width: 100%;
     -webkit-animation: changeBrightness 5s linear infinite;
     -moz-animation:    changeBrightness 5s linear infinite;
     -o-animation:      changeBrightness 5s linear infinite;
