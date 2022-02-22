@@ -7,6 +7,23 @@ let opacity = 0;
 let brightness = 1;
 let pageHeight= window.innerHeight * 4;
 
+const menu = document.querySelector('#navbar--toggle')
+const navbarLinks = document.querySelector('.navbar--menu')
+
+
+
+// Display Mobile Menu
+
+const mobileMenu = () => {
+    window.scrollTo(window.scrollX, window.scrollY - 1);
+    window.scrollTo(window.scrollX, window.scrollY + 1);
+    menu.classList.toggle('is-active')
+    navbarLinks.classList.toggle('active')
+}
+menu.addEventListener('click', mobileMenu)
+navbarLinks.addEventListener('click', mobileMenu)
+
+// Handle Scroll
 window.addEventListener('scroll', () => {
     let value = this.window.scrollY;
     if (value > window.innerHeight * 3) {
@@ -32,3 +49,4 @@ window.addEventListener('scroll', () => {
     // }
     // // console.log(opacity)
 })
+

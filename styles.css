@@ -46,6 +46,140 @@
     color: black;
 }
 
+/* Mobile Nav Bar */
+@media screen and (max-width: 920px){
+    nav {
+        display: flex;
+    }
+
+    .navbar {
+        /* border: solid black; */
+        transition: all 0.5s ease;
+        display: flex;
+        position: fixed;
+        justify-content: space-evenly;
+        background: rgba(0, 0, 0, 0.5);
+        height: 50px;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+        z-index: 1;
+        cursor: auto;
+    }
+
+    /* Triple Line Icon */
+
+    .toggle--container {
+        width: 100vw;
+        display: flex;
+        flex-direction: row-reverse;
+        /* border: solid black; */
+
+    }
+    #navbar--toggle {
+        padding: 5px 10px;
+        cursor: pointer;
+        transition: all 0.5s ease;
+    }
+    #navbar--toggle .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 03.s ease-in-out;
+        background: white;
+        display: block;
+        transition: all 0.5s ease;
+        /* z-index: 100; */
+    }
+
+    #navbar--toggle.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    #navbar--toggle.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    #navbar--toggle.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+
+    /* Mobile Page Styles */
+
+    .page h1 {
+        z-index: 11;
+    }
+    #mountains {
+        z-index: 100;
+    }
+    /* Mobile Nav Menu Styles */
+
+    .navbar--menu {
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        /* border: solid white; */
+        border-radius: 20px;
+        margin-top: 80px;
+        width: 80%;
+        position: absolute;
+        top: -1000px;
+        background: rgba(255, 255, 255, 0.487);
+        transition: all 0.5s ease;
+    }
+
+
+    .navbar--menu.active {
+        top: 100%;
+        transition: all 0.5s ease;
+
+    }
+    .navbar--item {
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* border: solid white; */
+        /* padding: 20px; */
+
+    }
+
+    #home {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    #machine--learning {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .navbar--link {
+        border-radius: 0px;
+        margin: 0px;
+        padding: 20px;
+        z-index: 100;
+        text-align: center;
+        color: black;
+        border: none;
+        background: none;
+    }
+
+    .navbar--link:hover {
+        background-color: rgba(0, 0, 0, 0.501);
+        color: rgb(255, 255, 255);
+    }
+
+    .navbar--toggle .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease;
+    }
+
+
+}
+
 .content {
     /* border: solid black; */
     pointer-events: none;
