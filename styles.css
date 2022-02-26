@@ -182,6 +182,7 @@
 
 .content {
     /* border: solid black; */
+    z-index: 99;
     pointer-events: none;
     position: absolute;
     display: grid;
@@ -189,7 +190,6 @@
 }
 
 /* Page Styles */
-
 .page {
     /* min-height: 125vh; */
     display: flex;
@@ -200,7 +200,114 @@
     /* margin-top: 8vh; */
     color: white;
     padding-left: 20px;
+}
 
+/* Home Page Styles */
+.home-page__container {
+    position: absolute;
+    /* border: solid black; */
+    width: 99vw;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40vh;
+}
+
+.text__container {
+    display: flex;
+    flex-direction: column;
+}
+
+#welcome--title {
+    text-align: center;
+    font-size: 75px;
+}
+#home-page--details {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+/* About Page Styles */
+.about-page__container {
+    position: absolute;
+    width: 99vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.timeline__container {
+    /* border: solid black; */
+    margin-top: 20vh;
+    width: 80vw;
+    height: 100px;
+    position: relative;
+    display: flex;
+}
+
+.timeline {
+    position: absolute;
+    width: 100%;
+    background: white;
+    margin-top: 45px;
+    height: 5px;
+}
+
+.timeline-0__container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+.timeline-0__container .text__container {
+    /* border: solid black; */
+    margin-top: 100px;
+    width: 50%;
+}
+
+.timeline-0__container p{
+    color: white;
+    text-align: left;
+}
+
+.timeline-1__container {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    margin-left: 10%;
+}
+
+.timeline-2__container {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    margin-left: 30%;
+}
+.timeline-3__container {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    margin-left: 35%;
+}
+.timeline-4__container {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    margin-left: 40%;
+}
+.timeline-5__container {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    margin-left: 100%;
+    
+}
+
+.time-marker {
+    position: absolute;
+    background: white;
+    height: 100%;
+    width: 5px;
 }
 
 /* Background styles */
