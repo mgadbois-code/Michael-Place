@@ -270,38 +270,86 @@
     text-align: left;
 }
 
+
 .timeline-1__container {
     position: absolute;
     display: flex;
     height: 100%;
-    margin-left: 10%;
+    margin-left: 30%;
+}
+.timeline-1__container .text__container {
+    margin-top: 100px;
+    width: 50%;
+}
+
+.timeline-1__container p {
+    color: white;
 }
 
 .timeline-2__container {
     position: absolute;
     display: flex;
     height: 100%;
-    margin-left: 30%;
-}
-.timeline-3__container {
-    position: absolute;
-    display: flex;
-    height: 100%;
-    margin-left: 35%;
-}
-.timeline-4__container {
-    position: absolute;
-    display: flex;
-    height: 100%;
     margin-left: 40%;
 }
-.timeline-5__container {
+
+.timeline-2__container .text__container {
+    /* border: solid black; */
+    /* margin-bottom: 200px; */
+    transform: translateY(-100px);
+    width: 50%;
+}
+
+.timeline-2__container p{
+    color: white;
+}
+
+.timeline-3__container {
+    /* border: solid black; */
     position: absolute;
     display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
     height: 100%;
-    margin-left: 100%;
+    margin-left: 50%;
+    margin-top: 39px;
+    /* border: solid black; */
     
 }
+
+.timeline-3__container p {
+    color: white;
+}
+
+.circle-time-marker {
+    position: absolute;
+    background: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.arrow__container {
+
+}
+
+.arrow {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+}
+
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 25px solid white;
+    transform: translateY(-5px);
+}
+
+
 
 .time-marker {
     position: absolute;
@@ -310,6 +358,22 @@
     width: 5px;
 }
 
+.timeline-4__container {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    margin-left: 100%;
+    
+}
+
+.timeline-4__container .text__container {
+    margin-top: 100px;
+    width: 50%;
+}
+
+.timeline-4__container p {
+    color: white;
+}
 /* Background styles */
 .background {
     /* position: absolute; */
