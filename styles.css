@@ -440,10 +440,6 @@ nav {
     padding-bottom: 20px;
 }
 
-/* #organize {
-    border: solid black;
-    border-radius: 20px;
-} */
 
 #visualize {
     background-color: red;
@@ -486,6 +482,49 @@ nav {
     transform: scale(1.1);
 }
 
+/* Machine Learning Page Styles */
+
+.GEM-title__container {
+    margin-top: 8vh;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.GEM-title__container h2 {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+}
+
+.GEM-title__container p {
+    text-align: center;
+    color: white;
+}
+
+.machine-learning-page__container {
+    width: 100%;
+    /* border: solid black; */
+    display: grid;
+    grid-template-columns: 5fr 6fr 6fr 8fr
+}
+.machine-learning-page__container img {
+    width: 100%;
+    padding: 10px;
+    opacity: 75%;
+}
+.references img{
+    width: 100%;
+}
+
+.ref-logo__container {
+    display: flex;
+}
+
+
+.ref-logo__container img {
+    width: 50%;
+    height: 50%;
+}
 /* Background styles */
 .background {
     /* border: solid black; */
