@@ -414,38 +414,78 @@ nav {
 }
 
 .project-description__container {
-    border: solid black;
+    /* border: solid black; */
     display: flex;
     justify-content: end;
     max-width: 650px;
     padding: 0px 50px;
+    
 }
 .project-demo__container {
     width: 650px;
-    border: solid black;
+    /* border: solid black; */
     /* padding: 0 50px; */
 
 }
 .project-demo__container img {
     width: 100%;
+    padding: 20px;
+    /* border: solid black; */
+    /* border-radius: 20px; */
 }
 
 #color-planner-description h2 {
     color: white;
     font-size: 50px;
-    padding-bottom: 50px;
-    
+    padding-bottom: 20px;
+}
+
+/* #organize {
+    border: solid black;
+    border-radius: 20px;
+} */
+
+#visualize {
+    background-color: red;
+    background-image: linear-gradient(to right, red,blue,purple);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent; 
+
+
 }
 
 .seperator {
-    width: 1000px;
-    height: 100px;
+    width:80%;
+    margin-bottom: 30px ;
+    height: 5px;
     background: white;
 }
 
 #color-planner-description p {
+    padding: 10px;
     color: white;
 } 
+
+#download-link {
+    color: white;
+    background-color: green;
+    padding: 20px;
+    border-radius: 20px;
+    transition: ease 1s;
+}
+
+#download-link a {
+    color: white;
+    text-decoration: none;
+}
+
+#download-link:hover {
+    transform: scale(1.1);
+}
+
 /* Background styles */
 .background {
     /* border: solid black; */
