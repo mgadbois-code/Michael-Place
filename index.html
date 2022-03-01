@@ -9,35 +9,34 @@
     </head>
 
     <body>
-        <nav>
-            <div class="navbar">
-                <ul class="navbar--menu">
-                    <li class="navbar--item" id="home">
-                        <a class="navbar--link" href="#home-page">Home</a>
-                    </li>
-                    <li class="navbar--item" id="about">
-                        <a class="navbar--link" href="#about-page">About Me</a>
-                    </li>
-                    <li class="navbar--item" id="color--planner">
-                        <a class="navbar--link" href="#color-planner-page">Color Planner</a>
-                    </li>
-                    <li class="navbar--item" id="machine--learning">
-                        <a class="navbar--link" href="#machine-learning-page">Machine Learning</a>
-                    </li>
-                </ul>
-
-                <div class="toggle--container">
-                    <div id="navbar--toggle" >
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <div class="background">
             <div class="content">
                 <div class="page" id="home-page">
+                    <nav>
+                        <div class="navbar">
+                            <ul class="navbar--menu">
+                                <li class="navbar--item" id="home">
+                                    <a class="navbar--link" href="#home-page">Home</a>
+                                </li>
+                                <li class="navbar--item" id="about">
+                                    <a class="navbar--link" href="#about-page">About Me</a>
+                                </li>
+                                <li class="navbar--item" id="color--planner">
+                                    <a class="navbar--link" href="#color-planner-page">Color Planner</a>
+                                </li>
+                                <li class="navbar--item" id="machine--learning">
+                                    <a class="navbar--link" href="#machine-learning-page">Machine Learning</a>
+                                </li>
+                            </ul>
+            
+                            <div class="toggle--container">
+                                <div id="navbar--toggle" >
+                                    <span class="bar"></span>
+                                    <span class="bar"></span>
+                                    <span class="bar"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
                     <h1>Home</h1>
                     <section class="home-page__container">
                         <div class="text__container">
@@ -98,28 +97,27 @@
                 <div class="page" id="color-planner-page">
                     <h1>Color Planner</h1>
                     <section class="color-panner-page__container">
+                        <div class="page-content">
                         <div class="project-description__container">
-                            <p>My first solo project. A desktop application I made using
-                                NodeJS, React, and Electron that helps me plan and achieve my goals.
-                            </p>
+                            <div id="color-planner-description">
+                                <h2>Organize and visualize all of your goals. </h2>
+                                <span class="seperator"></span>
+                                <p>Color Planner is a desktop application I made using NodeJS, React, and Electron that helps me plan and achieve my goals.
+                                     I use it to create goals made up of individual, actionable, and to track my progress.
+                                </p>
+                            </div>
                         </div>
                         <div class="project-demo__container">
                             <img src="images/ColorPlannerDemo.gif" alt="">
                         </div>
-                        <div class="project-ad__container">
-                            <h3>Use Color Planner to:</h3>
-                            <ul>
-                                <li>Create goals made up of individual, actionable tasks</li>
-                                <li>Organize and visualize the goals you set for yourself</li>
-                                <li>Track your progress by checking off tasks and saving completed goals</li>
-                            </ul>
-                        </div>
+                    </div>
                     </section>
                 </div>
                 <div class="page" id="machine-learning-page">
                     <h1>Machine Learning</h1>
                 </div>
             </div>
+            <div class="background">
             <div id="stars--background"></div>
             <div class="container" id="scene--container">
                 <div id="aurora--container">

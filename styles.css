@@ -12,6 +12,8 @@
 }
 
 /* navbar styles */
+nav {
+}
 .navbar {
     display: flex;
     flex-direction: row-reverse;
@@ -26,6 +28,7 @@
     margin-top: 20px;
     width: auto;
     list-style: none;
+    z-index: 9999;
 }
 
 .navbar--link {
@@ -51,7 +54,7 @@
     nav {
         display: flex;
     }
-
+    
     .navbar {
         /* border: solid black; */
         transition: all 0.5s ease;
@@ -66,16 +69,17 @@
         z-index: 1;
         cursor: auto;
     }
-
+    
     /* Triple Line Icon */
-
+    
     .toggle--container {
         width: 100vw;
         display: flex;
         flex-direction: row-reverse;
         /* border: solid black; */
-
+        
     }
+    
     #navbar--toggle {
         padding: 5px 10px;
         cursor: pointer;
@@ -106,14 +110,23 @@
     /* Mobile Page Styles */
 
     .page h1 {
-        z-index: 11;
+        position: absolute;
+        z-index: 9999;
+    }
+    .nav {
+        position: relative;
+        z-index: 9999;
+    }
+    .page section {
+        z-index: 0;
+        
     }
     #mountains {
         z-index: 100;
     }
     /* Mobile Nav Menu Styles */
 
-    .navbar--menu {
+    .navbar--menu {       
         padding: 0px;
         margin: 0px;
         display: flex;
@@ -135,6 +148,8 @@
 
     }
     .navbar--item {
+        position: relative;
+       
         overflow: hidden;
         width: 100%;
         display: flex;
@@ -184,7 +199,7 @@
     /* border: solid black; */
     width: 100%;
     z-index: 99;
-    pointer-events: none;
+    /* pointer-events: none; */
     position: absolute;
     display: grid;
     grid-template-rows: 100vh 100vh 100vh 100vh;
@@ -195,7 +210,7 @@
     /* min-height: 125vh; */
     width: 100%;
     /* border: solid black; */
-    display: flex;
+    /* display: flex; */
     /* position: relative; */
 }
 
@@ -387,52 +402,60 @@
 
 .color-panner-page__container {
     width: 100%;
-    border: solid black;
-    margin-top: 20vh;
+    /* border: solid black; */
+    margin-top: 10vh;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items:center 
 }
 
-.color-panner-page__container p {
-    /* max-width: 30vw; */
-    min-width: none;
-    margin-left: 10px ;
-    font-size: 20px;
-    color: white;
+.page-content {
+    display: flex;
 }
 
 .project-description__container {
-    min-width: none;
+    border: solid black;
+    display: flex;
+    justify-content: end;
+    max-width: 650px;
+    padding: 0px 50px;
 }
 .project-demo__container {
     width: 650px;
-    overflow: hidden;
     border: solid black;
     /* padding: 0 50px; */
 
 }
 .project-demo__container img {
     width: 100%;
-
 }
 
-
-.project-ad__container {
-    margin-left: 30px ;
-    min-width: none;
+#color-planner-description h2 {
+    color: white;
+    font-size: 50px;
+    padding-bottom: 50px;
+    
 }
 
+.seperator {
+    width: 1000px;
+    height: 100px;
+    background: white;
+}
+
+#color-planner-description p {
+    color: white;
+} 
 /* Background styles */
 .background {
-    /* position: absolute; */
     /* border: solid black; */
     overflow: hidden;
     height: 400vh;
     background: linear-gradient(to bottom, rgb(71, 125, 187), rgb(96, 137, 184),rgb(219, 194, 82),rgb(148, 19, 19) 70%,rgb(9, 2, 48) 76%,rgb(4, 0, 26));
     display: flex;
     flex-direction: column;
-    
-    /* position: relative; */
+    z-index: 9;
+    position: static;
 }
 
 #scene--container {
