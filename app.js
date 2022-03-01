@@ -7,6 +7,16 @@ let opacity = 0;
 let brightness = 1;
 let pageHeight= window.innerHeight * 4;
 
+const date= new Date()
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+let year = date.getFullYear()
+let month = months[date.getMonth()]
+let day = date.getDay() -1 
+
+let dateAsString = `${month} ${day}, ${year}`
+let currDateDisplay = document.getElementById("current-date")
+currDateDisplay.innerHTML = dateAsString
+
 const menu = document.querySelector('#navbar--toggle')
 const navbarLinks = document.querySelector('.navbar--menu')
 

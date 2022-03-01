@@ -260,7 +260,7 @@ nav {
 
 .timeline__container {
     /* border: solid black; */
-    margin-top: 20vh;
+    margin-top: 8vh;
     width: 80vw;
     height: 100px;
     position: relative;
@@ -298,6 +298,7 @@ nav {
     position: absolute;
     display: flex;
     height: 100%;
+    width: 20%;
     margin-left: 30%;
 }
 .timeline-1__container .text__container {
@@ -336,12 +337,17 @@ nav {
     height: 100%;
     margin-left: 50%;
     margin-top: 39px;
+    
     /* border: solid black; */
     
 }
 
 .timeline-3__container p {
     color: white;
+}
+
+#current-date{
+    transform: translateY(-30px) ;
 }
 
 .circle-time-marker {
@@ -357,7 +363,7 @@ nav {
 }
 
 .arrow {
-    margin-top: 50px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-around;
     height: 100px;
@@ -372,7 +378,13 @@ nav {
     transform: translateY(-5px);
 }
 
+.timeline-3__container p{
+    animation: scaling 2s infinite;
+}
 
+@keyframes scaling {
+    50% {transform: scale(1.1);}
+}
 
 .time-marker {
     position: absolute;
@@ -396,6 +408,17 @@ nav {
 
 .timeline-4__container p {
     color: white;
+}
+
+.images__container {
+    /* background-color: rgba(255, 255, 255, 0.439); */
+    margin-top: 30px;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.social-media-img {
+    width: 50px
 }
 
 /* Color Planner Page Styles */
