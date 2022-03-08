@@ -421,6 +421,24 @@ nav {
     width: 50px
 }
 
+
+@media screen and (max-width: 920px) {
+    .about-page__container p{
+        background-color: rgba(0, 0, 0, 0.515);
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .about-page__container .timeline-0__container {
+        width: 30vw;
+    }
+
+    .about-page__container .timeline-1__container{
+        width: 25vw;
+    }
+
+}
+
 /* Color Planner Page Styles */
 
 .color-panner-page__container {
@@ -433,34 +451,32 @@ nav {
 }
 
 .page-content {
-    display: flex;
+    display: grid;
+    grid-template-columns: 5fr 6fr;
+    /* border: solid black; */
 }
 
 .project-description__container {
     /* border: solid black; */
     display: flex;
     justify-content: end;
+    width: 100%;
     max-width: 650px;
     padding: 0px 50px;
     
 }
 .project-demo__container {
-    width: 650px;
-    /* border: solid black; */
+    /* width: 650px; */
+   
     /* padding: 0 50px; */
 
 }
+
 .project-demo__container img {
     width: 100%;
     padding: 20px;
     /* border: solid black; */
     /* border-radius: 20px; */
-}
-
-#color-planner-description h2 {
-    color: white;
-    font-size: 50px;
-    padding-bottom: 20px;
 }
 
 
@@ -472,8 +488,7 @@ nav {
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent; 
-
-
+    
 }
 
 .seperator {
@@ -482,6 +497,11 @@ nav {
     height: 5px;
     background: white;
 }
+#color-planner-description h2 {
+    color: white;
+    font-size: 4vw;
+    padding-bottom: 20px;
+}
 
 #color-planner-description p {
     padding: 10px;
@@ -489,11 +509,13 @@ nav {
 } 
 
 #download-link {
+    margin: 0px 20px;
     color: white;
     background-color: green;
     padding: 20px;
     border-radius: 20px;
     transition: ease 1s;
+    text-align: center;
 }
 
 #download-link a {
@@ -503,6 +525,21 @@ nav {
 
 #download-link:hover {
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 920px) {
+    #color-planner-description p {
+        display: none;
+    }
+    .page-content {
+        display: grid;
+        grid-template-columns:1fr;
+        /* border: solid black; */
+    }
+    #color-planner-description h2 {
+        font-size: 4vh;
+    }
+    
 }
 
 /* Machine Learning Page Styles */
@@ -548,6 +585,7 @@ nav {
     width: 50%;
     height: 50%;
 }
+
 /* Background styles */
 .background {
     /* border: solid black; */
@@ -580,6 +618,31 @@ nav {
     /* justify-self:  flex-end; */
 }
 
+/* Mobile ML Page */
+
+@media screen and (max-width: 920px) {
+    .machine-learning-page__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .machine-learning-page__container div{
+        width: 60vw;
+    }
+    .references {
+        display: none;
+    }
+    .GEM-title__container h2 {
+        font-size: 4vw;
+    }
+    
+    .GEM-title__container p {
+        font-size: 2vw;
+    }
+
+  
+}
 #aurora--container {
     position: fixed;
     align-self: flex-start;
@@ -695,3 +758,30 @@ nav {
     100% { filter:hue-rotate(360deg) brightness(0); }
 }
 
+
+/* Mobile Background */
+@media screen and (max-width: 920px) {
+    .background {
+        background: linear-gradient(to bottom, rgb(71, 125, 187), rgb(96, 137, 184),rgb(219, 194, 82),rgb(148, 19, 19) 55%,rgb(9, 2, 48) 60%,rgb(4, 0, 26));
+        height: 500vh;
+    }
+    #stars--background {
+        min-height: 500vh;
+    }
+    @-webkit-keyframes changeBrightness {
+        0%   { -webkit-filter:hue-rotate(0deg) brightness(1); }
+        70% { -webkit-filter:hue-rotate(360deg) brightness(0); }
+    }
+    @-moz-keyframes changeBrightness {
+        0%   { -moz-filter:hue-rotate(0deg) brightness(1); }
+        70% { -moz-filter:hue-rotate(360deg) brightness(0); }
+    }
+    @-o-keyframes changeBrightness {
+        0%   { -o-filter:hue-rotate(0deg) brightness(1); }
+        70% { -o-filter:hue-rotate(360deg) brightness(0); }
+    }
+    @keyframes changeBrightness {
+        0%   { filter:hue-rotate(0deg)brightness(1); }
+        70% { filter:hue-rotate(360deg) brightness(0); }
+    }
+}

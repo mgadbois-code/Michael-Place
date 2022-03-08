@@ -11,7 +11,7 @@ const date= new Date()
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 let year = date.getFullYear()
 let month = months[date.getMonth()]
-let day = date.getDay() -1 
+let day = date.getDate()
 
 let dateAsString = `${month} ${day}, ${year}`
 let currDateDisplay = document.getElementById("current-date")
